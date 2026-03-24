@@ -6,15 +6,15 @@ export declare const PixCustomerSchema: z.ZodObject<{
     type: z.ZodOptional<z.ZodString>;
     phones: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnknown>>;
 }, "strip", z.ZodTypeAny, {
-    email?: string | undefined;
     type?: string | undefined;
     name?: string | undefined;
+    email?: string | undefined;
     document?: string | undefined;
     phones?: Record<string, unknown> | undefined;
 }, {
-    email?: string | undefined;
     type?: string | undefined;
     name?: string | undefined;
+    email?: string | undefined;
     document?: string | undefined;
     phones?: Record<string, unknown> | undefined;
 }>;
@@ -26,15 +26,15 @@ export declare const CreatePixSchema: z.ZodObject<{
         type: z.ZodOptional<z.ZodString>;
         phones: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnknown>>;
     }, "strip", z.ZodTypeAny, {
-        email?: string | undefined;
         type?: string | undefined;
         name?: string | undefined;
+        email?: string | undefined;
         document?: string | undefined;
         phones?: Record<string, unknown> | undefined;
     }, {
-        email?: string | undefined;
         type?: string | undefined;
         name?: string | undefined;
+        email?: string | undefined;
         document?: string | undefined;
         phones?: Record<string, unknown> | undefined;
     }>;
@@ -54,9 +54,9 @@ export declare const CreatePixSchema: z.ZodObject<{
     metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnknown>>;
 }, "strip", z.ZodTypeAny, {
     customer: {
-        email?: string | undefined;
         type?: string | undefined;
         name?: string | undefined;
+        email?: string | undefined;
         document?: string | undefined;
         phones?: Record<string, unknown> | undefined;
     };
@@ -72,9 +72,9 @@ export declare const CreatePixSchema: z.ZodObject<{
     metadata?: Record<string, unknown> | undefined;
 }, {
     customer: {
-        email?: string | undefined;
         type?: string | undefined;
         name?: string | undefined;
+        email?: string | undefined;
         document?: string | undefined;
         phones?: Record<string, unknown> | undefined;
     };

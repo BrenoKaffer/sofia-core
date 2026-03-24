@@ -149,8 +149,8 @@ export declare const PartnerRecipientSchema: z.ZodObject<{
             type?: "mobile" | "landline" | undefined;
         }>;
     }, "strip", z.ZodTypeAny, {
-        email: string;
         name: string;
+        email: string;
         cpf: string;
         address: {
             street: string;
@@ -172,8 +172,8 @@ export declare const PartnerRecipientSchema: z.ZodObject<{
         professional_occupation: string;
         monthly_income?: number | undefined;
     }, {
-        email: string;
         name: string;
+        email: string;
         cpf: string;
         address: {
             street: string;
@@ -248,8 +248,8 @@ export declare const PartnerRecipientSchema: z.ZodObject<{
         cnae?: string | undefined;
     };
     representative: {
-        email: string;
         name: string;
+        email: string;
         cpf: string;
         address: {
             street: string;
@@ -308,8 +308,8 @@ export declare const PartnerRecipientSchema: z.ZodObject<{
         cnae?: string | undefined;
     };
     representative: {
-        email: string;
         name: string;
+        email: string;
         cpf: string;
         address: {
             street: string;
