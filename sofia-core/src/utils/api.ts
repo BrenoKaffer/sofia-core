@@ -7,6 +7,8 @@ export function normalizeApiBase(value: string | undefined | null): string {
 export function getApiBase(envOverride?: string): string {
   const raw =
     envOverride ??
+    process.env.BACKEND_PUBLIC_URL ??
+    process.env.BACKEND_INTERNAL_URL ??
     process.env.NEXT_PUBLIC_API_URL ??
     process.env.INTERNAL_API_BASE_URL ??
     process.env.SOFIA_BACKEND_URL ??
