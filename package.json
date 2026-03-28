@@ -1,0 +1,22 @@
+{
+  "name": "@sofia/core",
+  "version": "1.0.2",
+  "private": false,
+  "type": "module",
+  "main": "./sofia-core/dist/index.js",
+  "types": "./sofia-core/dist/index.d.ts",
+  "exports": {
+    ".": "./sofia-core/dist/index.js",
+    "./auth": "./sofia-core/dist/auth/index.js",
+    "./config": "./sofia-core/dist/config/index.js",
+    "./contracts": "./sofia-core/dist/contracts/index.js",
+    "./integrations/websocket": "./sofia-core/dist/integrations/websocket/index.js",
+    "./schemas": "./sofia-core/dist/schemas/index.js",
+    "./sdk": "./sofia-core/dist/sdk/index.js",
+    "./types": "./sofia-core/dist/types/index.js",
+    "./utils": "./sofia-core/dist/utils/index.js"
+  },
+  "files": [
+    "sofia-core/dist"
+  ]
+}
