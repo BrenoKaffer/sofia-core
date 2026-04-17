@@ -5,13 +5,6 @@ import {
   RegisterResponse,
   PasswordRecoveryRequest,
   PasswordRecoveryResponse,
-  CheckoutLinkRequest,
-  CheckoutLinkResponse,
-  CheckoutLinkStatusResponse,
-  CreatePixRequest,
-  CreatePixResponse,
-  VerifyPixRequest,
-  VerifyPixResponse,
   CreateSubscriptionRequest,
   CreateSubscriptionResponse,
   PartnerMeResponse,
@@ -137,25 +130,7 @@ export function createSofiaClient(options: SofiaClientOptions = {}) {
           body: JSON.stringify(body)
         })
     },
-    billing: {
-      createCheckoutLink: (body: CheckoutLinkRequest) =>
-        requestJson<CheckoutLinkResponse>('/billing/checkout-link', {
-          method: 'POST',
-          body: JSON.stringify(body)
-        }),
-      getCheckoutLinkStatus: (linkId: string) =>
-        requestJson<CheckoutLinkStatusResponse>(`/billing/checkout-link-status/${encodeURIComponent(linkId)}`)
-    },
     payments: {
-      createPix: (body: CreatePixRequest) =>
-        requestJson<CreatePixResponse>('/payments/create-pix', {
-          method: 'POST',
-          body: JSON.stringify(body)
-        }),
-      verifyPix: (params: VerifyPixRequest) =>
-        requestJson<VerifyPixResponse>(`/payments/create-pix?order_id=${encodeURIComponent(params.order_id)}`, {
-          method: 'PUT'
-        }),
       createSubscription: (body: CreateSubscriptionRequest) =>
         requestJson<CreateSubscriptionResponse>('/payments/create-subscription', {
           method: 'POST',
